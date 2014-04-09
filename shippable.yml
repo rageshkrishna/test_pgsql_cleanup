@@ -1,0 +1,5 @@
+language: python
+python:
+ - 2.7
+script:
+ - psql -d template1 -c 'CREATE SCHEMA hstore; CREATE EXTENSION hstore SCHEMA hstore;'
